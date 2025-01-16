@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramirez Legacy Consulting LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0dcd3ed8d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/RLC.jpeg" class="logo" alt="Ramirez Legacy Consulting Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="https://calendly.com/ramirezlegacyconsulting">Schedule an Appointment</a></li> <!-- Added here -->
+                <li><a href="WhatToBring.html">What To Bring</a></li> <!-- Updated to point to the What To Bring page -->
+                <li><a href="#contact">Contact Us</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>15 YEARS OF EXPERIENCE</p>
+            <h1>COME TO THE PROS WHO KNOW!</h1>
+            <h2>TAX PREPARATION DONE WITH INTEGRITY AND HONESTY.</h2>
+            <h3>PERSONAL OR BUSINESS FILING? WE GOT YOU COVERED.</h3>
+        </div>
+    </div>
+</div>  
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg" alt="About Us">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>We are a client-focused tax preparation and bookkeeping firm dedicated to helping individuals and small businesses navigate their financial journeys with confidence. Our mission is to provide accurate, personalized, and reliable financial solutions tailored to meet your unique needs.</p>
+                <br>
+                <p>With expertise in optimizing tax strategies, managing bookkeeping processes, and delivering actionable financial insights, we aim to empower clients and support smarter business decisions. We believe in building strong relationships, fostering clear communication, and prioritizing your financial success.</p>
+                <br>
+                <p>Whether you’re seeking assistance with tax filing, bookkeeping support, or guidance for future financial planning, we are here to help you every step of the way. Let us handle the numbers, so you can focus on what matters most to you.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-file-invoice"></i>
+                <h2>Tax Preparation</h2>
+                <ul>
+                    <li>Individual Tax Preparation</li>
+                    <li>Corporations</li>
+                    <li>Partnerships</li>
+                    <li>Any State Tax Return</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <h2>Small Business Services</h2>
+                <ul>
+                    <li>Incorporation and Registration</li>
+                    <li>Accounting & Bookkeeping</li>
+                    <li>Payroll & 1099 Solutions</li>
+                    <li>Business Planning</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-calendar-days"></i>
+                <h2>Payroll Services</h2>
+                <p>Pricing available upon consultation.</p>
+            </div>
+        </div>
+        <a href="https://calendly.com/ramirezlegacyconsulting" class="btn">Schedule an Appointment</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-solid fa-envelope"></i> ramirezlegacyconsulting@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 786-267-0673</p>
+            </div>
+            <div class="contact-right">
+                <form action="#" method="post">
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <input type="text" name="city" placeholder="City">
+                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i> Ramirez Legacy Consulting LLC. All rights reserved.</p>
+</div>
+
+<script>
+    function openmenu(){
+        document.getElementById("sidemenu").style.right = "0";
+    }
+    function closemenu(){
+        document.getElementById("sidemenu").style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
