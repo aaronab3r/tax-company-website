@@ -1,5 +1,3 @@
-# tax-company-website
-
 # Tax Company Website
 
 This repository contains the development of a website for a tax consulting company. The goal is to create a professional, user-friendly, and visually appealing website that meets the needs of the business and its clients.
