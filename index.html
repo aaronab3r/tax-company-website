@@ -31,19 +31,22 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/about.jpg" alt="About Us">
+                <img src="images/About.webp" alt="About Us">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Us</h1>
-                <p>We are a client-focused tax preparation and bookkeeping firm dedicated to helping individuals and small businesses navigate their financial journeys with confidence. Our mission is to provide accurate, personalized, and reliable financial solutions tailored to meet your unique needs.</p>
-                <br>
-                <p>With expertise in optimizing tax strategies, managing bookkeeping processes, and delivering actionable financial insights, we aim to empower clients and support smarter business decisions. We believe in building strong relationships, fostering clear communication, and prioritizing your financial success.</p>
-                <br>
-                <p>Whether you’re seeking assistance with tax filing, bookkeeping support, or guidance for future financial planning, we are here to help you every step of the way. Let us handle the numbers, so you can focus on what matters most to you.</p>
+                <div class="about-box"> <!-- Added div for black background -->
+                    <h1 class="sub-title">About Us</h1>
+                    <p>We are a client-focused tax preparation and bookkeeping firm dedicated to helping individuals and small businesses navigate their financial journeys with confidence. Our mission is to provide accurate, personalized, and reliable financial solutions tailored to meet your unique needs.</p>
+                    <br>
+                    <p>With expertise in optimizing tax strategies, managing bookkeeping processes, and delivering actionable financial insights, we aim to empower clients and support smarter business decisions. We believe in building strong relationships, fostering clear communication, and prioritizing your financial success.</p>
+                    <br>
+                    <p>Whether you’re seeking assistance with tax filing, bookkeeping support, or guidance for future financial planning, we are here to help you every step of the way. Let us handle the numbers, so you can focus on what matters most to you.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div id="services">
     <div class="container">
@@ -72,10 +75,12 @@
             <div>
                 <i class="fa-solid fa-calendar-days"></i>
                 <h2>Payroll Services</h2>
+            <ul>
                 <li>Full-service payroll management</li>
                 <li>Tax filings and compliance</li>
                 <li>Direct deposit setup</li>
                 <li>Employee W-2/1099 preparation</li>
+            </ul>
             </div>
         </div>
         <div class="btn-container">
@@ -88,18 +93,26 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Us</h1>
-                <p><i class="fa-solid fa-envelope"></i> ramirezlegacyconsulting@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> 786-267-0673</p>
+                <p><i class="fa-solid fa-envelope"></i> 
+                    <a href="mailto:ramirezlegacyconsulting@gmail.com" style="color: #000; text-decoration: none;">
+                       ramirezlegacyconsulting@gmail.com
+                    </a>
+                 </p>
+                 <p><i class="fa-solid fa-square-phone"></i> 
+                    <a href="tel:+17862670673" style="color: #000; text-decoration: none;">
+                       (786) 267-0673
+                    </a>
+                 </p>                                
             </div>
             <div class="contact-right">
-                <form action="#" method="post">
-                    <input type="text" name="full_name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="tel" name="phone" placeholder="Phone" required>
-                    <input type="text" name="city" placeholder="City">
-                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <input type="tel" name="Phone" placeholder="Phone" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -118,5 +131,22 @@
     }
 </script>
 
-</body>
-</html>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwz5iAekoRik1FeY1icAuz-DBlH5xglSS_nN_T0L9t1WJZ-RrK0bmkS_L64-Pxr_9dP8A/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.style.color = "black";
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
