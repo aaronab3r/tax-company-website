@@ -11,9 +11,13 @@ html {
 }
 
 body {
-    background: #080808;
+    background-image: url(images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
 }
+
 
 /* Header Section */
 #header {
@@ -58,7 +62,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     /* background: #000; */
-    background: #ffc90486;
+    background: #ba9d26;
     padding: 5px 10px;
     border-radius: 15px;
     transition: background 0.3s, color 0.3s;
@@ -133,13 +137,37 @@ nav .fa-x {
 .sub-title {
     font-size: 40px;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
 }
 
 .about-col-2 p {
     margin-bottom: 15px;
-    color: #ababab;
+    color: #000000;
 }
+
+/* About Section */
+.about-box {
+    background: #434343;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 6px;
+}
+
+.about-box h1 {
+    margin-top: 0;
+    color: #ba9d26 !important;
+}
+
+.about-box p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #fff !important;
+}
+
+
+
 
 /* Services Section */
 #services {
@@ -154,7 +182,7 @@ nav .fa-x {
 }
 
 .services-list div {
-    background: #262626;
+    background: #434343;
     padding: 20px;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -164,7 +192,7 @@ nav .fa-x {
 .services-list div i {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #FFC904;
+    color: #ba9d26;
 }
 
 .services-list div h2 {
@@ -267,17 +295,18 @@ nav .fa-x {
 
 .contact-right form input,
 .contact-right form textarea {
-    width: 100%;
+    width: calc(100% + 120px); /* Increases the width beyond the container by 20px */
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px -100px; /* Shifts the boxes 10px to the left */
     background: #262626;
     border: none;
     border-radius: 6px;
     color: #fff;
 }
 
+
 form .btn2 {
-    padding: 10px 20px;
+    padding: 10px 200px;
 }
 
 /* Footer */
