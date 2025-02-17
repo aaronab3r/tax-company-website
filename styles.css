@@ -89,7 +89,9 @@
   }
   
   /* Menu button */
+  /* Hide the hamburger button by default on desktop */
   #menu-button {
+    display: none;
     cursor: pointer;
   }
   
@@ -329,9 +331,26 @@
     color: #BA9B37;
   }
   
-  /* Responsive Design */
+  /* Responsive Design for Smaller Laptops */
+  @media only screen and (max-width: 1024px) {
+    .container {
+      padding: 7px 5%;
+    }
+    .logo {
+      width: 150px;
+    }
+    nav ul li a {
+      font-size: 16px;
+      padding: 4px 8px;
+    }
+    nav ul li {
+      margin: 0 5px;
+    }
+  }
+  
+  /* Responsive Design for Mobile Devices */
   @media only screen and (max-width: 600px) {
-    /* Menu button styling on mobile */
+    /* Show menu button only on mobile */
     #menu-button {
       display: block;
       font-size: 25px;
@@ -365,8 +384,9 @@
   
     /* Adjust main banner for mobile */
     #header {
+      background-size: cover;
+      background-position: center top;
       height: 60vh;
-      background-position: top center;
     }
   
     /* Adjust contact form inputs for mobile */
@@ -376,4 +396,3 @@
       margin: 10px 0;
     }
   }
-  
