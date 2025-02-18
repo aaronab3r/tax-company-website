@@ -2,7 +2,7 @@
 
 This repository contains the development of a website for a tax consulting company. The goal is to create a professional, user-friendly, and visually appealing website that meets the needs of the business and its clients.
 
-🔗 **Access the Website**: [Ramirez Legacy Consulting]([https://www.ramirezlegacyconsulting.com])
+🔗 **Access the Website**: [Ramirez Legacy Consulting](https://www.ramirezlegacyconsulting.com)
 
 ## Features
 - **Home Page:** Highlights the company’s services and expertise.
