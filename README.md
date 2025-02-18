@@ -2,6 +2,8 @@
 
 This repository contains the development of a website for a tax consulting company. The goal is to create a professional, user-friendly, and visually appealing website that meets the needs of the business and its clients.
 
+🔗 **Access the Website**: [Ramirez Legacy Consulting]([https://aberasturia.me](https://ramirezlegacyconsulting.com/))
+
 ## Features
 - **Home Page:** Highlights the company’s services and expertise.
 - **About Us:** Information about the company’s mission and values.
@@ -9,9 +11,6 @@ This repository contains the development of a website for a tax consulting compa
 - **What To Bring:** A guide for clients on required documents for tax preparation.
 - **Schedule an Appointment:** Integration with scheduling software (e.g., Calendly).
 - **Contact Us:** Contact information and a form for client inquiries.
-
-## Current Status
-This project is a Done!
 
 ## Technologies Used
 - **HTML5**
