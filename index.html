@@ -9,31 +9,33 @@
   <script src="https://kit.fontawesome.com/0dcd3ed8d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Main Banner -->
-  <div id="header">
+  <!-- Sticky Navigation -->
+  <header>
     <div class="container">
       <nav>
-        <img src="images/RLC-black.png" class="logo" alt="Ramirez Legacy Consulting Logo" />
+        <img src="images/RLC LOGO.png" class="logo" alt="Ramirez Legacy Consulting Logo" />
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="https://calendly.com/ramirezlegacyconsulting">Schedule an Appointment</a></li>
           <li><a href="WhatToBring.html">What To Bring</a></li>
           <li><a href="#contact">Contact Us</a></li>
+          <li><a href="https://calendly.com/ramirezlegacyconsulting" class="portal-btn">Book Appointment</a></li>
         </ul>
-        <!-- Only the menu (hamburger) button is shown -->
         <i id="menu-button" class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
     </div>
-  </div>
+  </header>
+
+  <!-- Main Hero Banner -->
+  <div id="header"></div>
 
   <!-- About Section -->
   <div id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/About.webp" alt="About Us" />
+          <img src="images/aboutus.png" alt="About Us" />
         </div>
         <div class="about-col-2">
           <div class="about-box">
@@ -97,8 +99,8 @@
           </ul>
         </div>
       </div>
-      <div class="btn-container">
-        <a href="https://calendly.com/ramirezlegacyconsulting" class="btn">Schedule an Appointment</a>
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="https://calendly.com/ramirezlegacyconsulting" class="btn btn-primary">Schedule an Appointment</a>
       </div>
     </div>
   </div>
@@ -111,13 +113,13 @@
           <h1 class="sub-title">Contact Us</h1>
           <p>
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:ramirezlegacyconsulting@gmail.com" style="color: #000; text-decoration: none;">
+            <a href="mailto:ramirezlegacyconsulting@gmail.com">
               ramirezlegacyconsulting@gmail.com
             </a>
           </p>
           <p>
             <i class="fa-solid fa-square-phone"></i>
-            <a href="tel:+17862670673" style="color: #000; text-decoration: none;">
+            <a href="tel:+17862670673">
               (786) 267-0673
             </a>
           </p>
@@ -128,7 +130,7 @@
             <input type="email" name="Email" placeholder="Email Address" required />
             <input type="tel" name="Phone" placeholder="Phone" required />
             <textarea name="Message" rows="6" placeholder="Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           <span id="msg"></span>
         </div>
@@ -158,7 +160,7 @@
 
     function closemenu() {
       var menu = document.getElementById("sidemenu");
-      menu.style.right = "-200px";
+      menu.style.right = "-250px";
       // Remove the overlay if it exists
       var overlay = document.getElementById("overlay");
       if (overlay) {

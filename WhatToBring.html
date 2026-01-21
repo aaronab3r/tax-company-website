@@ -11,82 +11,96 @@
   <header>
     <div class="container">
       <nav>
-        <img src="images/RLC-black.png" class="logo" alt="Ramirez Legacy Consulting Logo" />
+        <img src="images/RLC LOGO.png" class="logo" alt="Ramirez Legacy Consulting Logo" />
         <ul id="sidemenu">
           <li><a href="index.html#header">Home</a></li>
           <li><a href="index.html#about">About Us</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="https://calendly.com/ramirezlegacyconsulting">Schedule an Appointment</a></li>
           <li><a href="WhatToBring.html">What To Bring</a></li>
           <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="https://calendly.com/ramirezlegacyconsulting" class="portal-btn">Book Appointment</a></li>
         </ul>
-        <!-- Mobile menu button (set to black via CSS) -->
+        <!-- Mobile menu button -->
         <i id="menu-button" class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
     </div>
   </header>
 
-  <section id="WhatToBring" class="container">
-    <h1 class="sub-title">What To Bring</h1>
-
-    <div class="WhatToBring-section">
-      <h2>Q. Personal Information</h2>
-      <h3>Essential Items for Each Family Member:</h3>
-      <ul>
-        <li>Name</li>
-        <li>Date of Birth</li>
-        <li>Social Security Card / ITIN / ATIN</li>
-        <li>Last Year’s Tax Return</li>
-        <li>Valid Driver’s License</li>
-      </ul>
+  <!-- Page Hero Banner -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>What To Bring</h1>
+      <p>Ensure a smooth and accurate tax filing process by bringing these essential documents.</p>
     </div>
+  </div>
 
-    <div class="WhatToBring-section">
-      <h2>Q. Income & Tax Documents</h2>
-      <ul>
-        <li>W-2’s</li>
-        <li>Interest (1099-INT or substitute)</li>
-        <li>Dividend Slips (1099-DIV or substitute)</li>
-        <li>Stock Sales (1099-B or Broker Statement)</li>
-        <li>Self-Employment Income and Expenses</li>
-        <li>Sale of a Personal Residence</li>
-        <li>Rental Income and Expenses</li>
-        <li>Sale of any Business Assets</li>
-        <li>Gambling or Lottery Winnings (W-2G for some winnings)</li>
-        <li>State Income Tax Refund (1099-G)</li>
-        <li>Pension Income (1099-R)</li>
-        <li>Estimated Taxes Paid</li>
-        <li>Social Security or Railroad Retirement (SSA-1099 or RRB-1099)</li>
-        <li>IRA or 401(k) Distribution (1099-R)</li>
-        <li>Unemployment Compensation (1099-G)</li>
-        <li>Miscellaneous Income (1099-MISC)</li>
-      </ul>
+  <section id="WhatToBring">
+    <div class="container">
+    <div class="checklist-grid">
+      <!-- Personal Information Card -->
+      <div class="checklist-card">
+        <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
+        <h2>Personal Information</h2>
+        <h3>Essential Items for Each Family Member:</h3>
+        <ul>
+          <li>Name</li>
+          <li>Date of Birth</li>
+          <li>Social Security Card / ITIN / ATIN</li>
+          <li>Last Year’s Tax Return</li>
+          <li>Valid Driver’s License</li>
+        </ul>
+      </div>
+
+      <!-- Income & Tax Documents Card -->
+      <div class="checklist-card">
+        <div class="card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+        <h2>Income & Tax Documents</h2>
+        <ul>
+          <li>W-2’s</li>
+          <li>Interest (1099-INT) & Dividends (1099-DIV)</li>
+          <li>Stock Sales (1099-B) & Broker Statements</li>
+          <li>Self-Employment Income & Expenses</li>
+          <li>Sale of Personal Residence or Assets</li>
+          <li>Rental Income & Expenses</li>
+          <li>Gambling/Lottery Winnings (W-2G)</li>
+          <li>State Income Tax Refund (1099-G)</li>
+          <li>Pension/IRA/401(k) Income (1099-R)</li>
+          <li>Social Security (SSA-1099)</li>
+          <li>Unemployment Compensation (1099-G)</li>
+          <li>Miscellaneous Income (1099-MISC)</li>
+        </ul>
+      </div>
+
+      <!-- Deductions & Adjustments Card -->
+      <div class="checklist-card">
+        <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+        <h2>Deductions & Adjustments</h2>
+        <ul>
+          <li>Medical Expenses</li>
+          <li>Real Estate or Personal Property Taxes</li>
+          <li>Mortgage Interest</li>
+          <li>Charitable Contributions</li>
+          <li>Employee Business Expenses</li>
+          <li>Gambling Losses</li>
+          <li>Moving Expenses</li>
+          <li>Traditional IRA Contributions</li>
+          <li>Higher Education Expenses</li>
+          <li>Educator Expenses</li>
+          <li>Student Loan Interest</li>
+        </ul>
+      </div>
+
+      <!-- Tax Credits Card -->
+      <div class="checklist-card">
+        <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+        <h2>Tax Credits</h2>
+        <ul>
+          <li>Child Care Provider Info (Address, EIN/SSN)</li>
+          <li>Adoption Expenses</li>
+          <li>Retirement Savings Contributions Credit</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="WhatToBring-section">
-      <h2>Q. Deductions & Adjustments</h2>
-      <ul>
-        <li>Medical Expenses</li>
-        <li>Real Estate or Personal Property Taxes</li>
-        <li>Mortgage Interest</li>
-        <li>Charitable Contributions (cash and non-cash)</li>
-        <li>Employee Business Expenses</li>
-        <li>Gambling Losses</li>
-        <li>Moving Expenses</li>
-        <li>Traditional IRA Contributions</li>
-        <li>Higher Education Expenses</li>
-        <li>Educator Expenses</li>
-        <li>Student Loan Interest</li>
-      </ul>
-    </div>
-
-    <div class="WhatToBring-section">
-      <h2>Q. Tax Credits</h2>
-      <ul>
-        <li>Child Care Provider / Address and Employer Identification Number (EIN) or Social Security Number (SSN)</li>
-        <li>Adoption Expenses</li>
-        <li>Retirement Savings Contributions Credit</li>
-      </ul>
     </div>
   </section>
 
@@ -110,7 +124,7 @@
 
     function closemenu() {
       var menu = document.getElementById("sidemenu");
-      menu.style.right = "-200px";
+      menu.style.right = "-250px";
       // Remove the overlay if it exists
       var overlay = document.getElementById("overlay");
       if (overlay) {
